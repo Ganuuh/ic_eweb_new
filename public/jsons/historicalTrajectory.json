@@ -1,0 +1,406 @@
+{
+  "MN": {
+    "2024": [
+      {
+        "year": 2024,
+        "img": "/images/history/01032024.png",
+        "date": "03-р сар",
+        "title": "'Тогтвортой байдал'-ын хороо",
+        "body": "Төлөөлөн Удирдах Зөвлөлийн дэргэдэх 'Тогтвортой байдал'-ын хороог байгууллаа. "
+      },
+      {
+        "year": 2024,
+        "img": "/images/history/02032024.png",
+        "date": "03-р сар",
+        "title": "БОНЗ тайлан",
+        "body": "Байгаль орчин, нийгэм, засаглалын анхны тайлангаа танилцууллаа. "
+      },
+      {
+        "year": 2024,
+        "img": "/images/history/01042024.png",
+        "date": "04-р сар",
+        "title": "Хувьцаа эзэмшигчдийн хурал",
+        "body": "Хувьцаа эзэмшигчдийн ээлжит хурал 2024 “Ногоон ирээдүйд хөрөнгө оруулагч” уриатай байгаль орчинд ээлтэйгээр анх удаа Invescore аппликейшн болон вебсайтаар дамжуулан цахимаар амжилттай болж өнгөрлөө. "
+      }
+    ],
+    "2023": [
+      {
+        "year": 2023,
+        "img": "/images/history/01012023.png",
+        "date": "01-р-сар",
+        "title": "БОНЗ хөтөлбөр",
+        "body": "Тогтвортой хөгжлийн хүрээнд БАЙГАЛЬ ОРЧИН НИЙГЭМ ЗАСАГЛАЛЫН зарчмыг бизнесийн үйл ажиллагаандаа нэвтрүүллээ."
+      },
+      {
+        "year": 2023,
+        "img": "/images/history/01032023.png",
+        "date": "03-р сар",
+        "title": "Салбарын бүтцийн өөрчлөлт",
+        "body": "Салбаруудын бүтцэд өөрчлөлт оруулж 4 салбарыг Бизнес төв болгон өргөжүүлэв."
+      },
+      {
+        "year": 2023,
+        "img": "/images/history/02032023.png",
+        "date": "03-р сар",
+        "title": "Узбекистан салбар",
+        "body": "Узбекистан улсад охин компаниа байгуулж Төв Азид үйл ажиллагаагаа өргөжүүлэв."
+      }
+    ],
+    "2022": [
+      {
+        "year": 2022,
+        "img": "/images/history/01062022.png",
+        "date": "06-р сар",
+        "title": "Нэмэлт хувьцаа",
+        "body": "Санхүүгийн Зохицуулах Хорооноос нэмэлт хувьцаа гарагах зөвшөөрл авч, анхдагч арилжааны захиалга 100.41%-ийн амжилттай биелэлтэнд хүрэв."
+      },
+      {
+        "year": 2022,
+        "img": "/images/history/01122022.png",
+        "date": "12-р сар",
+        "title": "Инвескор 2.0 Бонд",
+        "body": "“Инвескор Бонд 2.0” нэртэй 50 тэрбум төгрөг бүхий өрийн хэрэгслийг үнэт цаасны зах зээлд нийлүүллээ."
+      }
+    ],
+    "2021": [
+      {
+        "year": 2021,
+        "img": "/images/history/01052021.png",
+        "date": "05-р сар",
+        "title": "ХБҮЦ",
+        "body": "Монголийн хөрөнгийн биржээр дамжуулан Хөрөнгөөр баталгаажсан үнэт цаасыг арилжаалж 20 тэрбум төгрөг бүхий нээлттэй бондын хөтөлбөрийг хэрэгжүүлэв."
+      },
+      {
+        "year": 2021,
+        "img": "/images/history/01082021.png",
+        "date": "08-р сар",
+        "title": "РИО ТИНТО МОНГОЛИА 2021",
+        "body": "“Рио Тинто 2021 Монгол” ХХК-тай хамтран Бичил болон жижиг дунд бизнес эрхлэгчдийг дэмжих хөтөлбөрийг хэрэгжүүлж эхлэв."
+      }
+    ],
+    "2020": [
+      {
+        "year": 2020,
+        "img": "/images/history/01012020.png",
+        "date": "01-р сар",
+        "title": "Киргиз салбар",
+        "body": "Үйл ажиллагаагаа Төв Ази руу тэлж Киргиз улсад охин компаниа байгуулав."
+      },
+      {
+        "year": 2020,
+        "img": "/images/history/02012020.png",
+        "date": "01-р сар",
+        "title": "Pocket app launch",
+        "body": "Pocket аппликейшнийг зах зээлд нэвтрүүлэв."
+      },
+      {
+        "year": 2020,
+        "img": "/images/history/03012020.png",
+        "date": "01-р сар",
+        "title": "Үндсэн бүртгэлийн систем",
+        "body": "Үндсэн бүртгэлийн системээ шинэчлэв."
+      },
+      {
+        "year": 2020,
+        "img": "/images/history/01042020.png",
+        "date": "04-р сар",
+        "title": "Хаалттай бонд",
+        "body": "Хаалттай хүрээнд бонд гаргав."
+      },
+      {
+        "year": 2020,
+        "img": "/images/history/01092020.png",
+        "date": "09-р сар",
+        "title": "Аллианс",
+        "body": "Аллианс хөтөлбөрийг эхлүүлэв."
+      },
+      {
+        "year": 2020,
+        "img": "/images/history/01102020.png",
+        "date": "10-р сар",
+        "title": "Киоск",
+        "body": "Киоск үйлчилгээг үйл ажиллагаандаа нэвтрүүлэв."
+      },
+      {
+        "year": 2020,
+        "img": "/images/history/01112020.png",
+        "date": "11-р сар",
+        "title": "Цахим мөнгө",
+        "body": "Аллианс хөтөлбөрийг эхлүүлэв."
+      }
+    ],
+    "2019": [
+      {
+        "year": 2019,
+        "img": "/images/history/01032019.png",
+        "date": "03-р сар",
+        "title": "Pocket",
+        "body": "Инвескор Хэтэвч финтек ББСБ-г байгуулан, үйл ажиллагааг эхлүүлэв."
+      },
+      {
+        "year": 2019,
+        "img": "/images/history/01062019.png",
+        "date": "06-р сар",
+        "title": "IPO",
+        "body": "ХУР Төрийн мэдээлэл солилцооны системийг үйл ажиллагаандаа нэвтрүүлсэн анхны ББСБ болов."
+      },
+      {
+        "year": 2019,
+        "img": "/images/history/01072019.png",
+        "date": "07-р сар",
+        "title": "Эрдэнэт салбар",
+        "body": "Үйл ажиллагаагаа орон нутаг руу тэлж Эрдэнэт хотод салбар байгуулан үйл ажиллагаа эхлүүлэв."
+      }
+    ],
+    "2018": [
+      {
+        "year": 2018,
+        "img": "/images/history/01032018.png",
+        "date": "10-р сар",
+        "title": "Ai lab",
+        "body": "Автомашин, бизнесийн шугам, кредит карт, жижиг дунд бизнес эрхлэгчдэд зориулсан шинэ зээлийн бүтээгдэхүүнүүдийг үйл ажиллагаандаа нэвтрүүлэв."
+      },
+      {
+        "year": 2018,
+        "img": "/images/history/01102018.png",
+        "date": "10-р сар",
+        "title": "Хур",
+        "body": "ХУР Төрийн мэдээлэл солилцооны системийг үйл ажиллагаандаа нэвтрүүлсэн анхны ББСБ болов."
+      },
+      {
+        "year": 2018,
+        "img": "/images/history/01102018.png",
+        "date": "10-р сар",
+        "title": "Smartlos",
+        "body": "Smart LOS системийг дотооддоо боловсруулан үйл ажиллагаандаа нэвтрүүлэв."
+      },
+      {
+        "year": 2018,
+        "img": "/images/history/01122018.png",
+        "date": "12-р сар",
+        "title": "Хиймэл оюун ухаанд суурилсан зээлийн үнэлгээний систем",
+        "body": "Хиймэл оюун ухаанд суурилсан зээлийн үнэлгээний системийг боловсруулав."
+      }
+    ],
+    "2017": [
+      {
+        "year": 2017,
+        "img": "/images/history/01012017.png",
+        "date": "01-р сар",
+        "title": "Шинэ зээлийн бүтээгдэхүүн нэвтрүүлсэн",
+        "body": "Автомашин, бизнесийн шугам, кредит карт, жижиг дунд бизнес эрхлэгчдэд зориулсан шинэ зээлийн бүтээгдэхүүнүүдийг үйл ажиллагаандаа нэвтрүүлэв."
+      }
+    ],
+    "2016": [
+      {
+        "year": 2016,
+        "img": "/images/history/01012016.png",
+        "date": "01-р сар",
+        "title": "Үйл ажиллагаагаа эхлүүлэв",
+        "body": "Санхүүгийн зохицуулах хорооны зөвшөөрлөөр Инвескор ББСБ 6 салбартай үйл ажиллагаагаа эхлүүлэв."
+      }
+    ]
+  },
+  "EN": {
+    "2024": [
+      {
+        "year": 2024,
+        "img": "/images/history/01032024.png",
+        "date": "March",
+        "title": "Sustainability committee was established",
+        "body": "The 'Sustainability' committee under the Board of Directors has been established."
+      },
+      {
+        "year": 2024,
+        "img": "/images/history/02032024.png",
+        "date": "March",
+        "title": "ESG Report",
+        "body": "The first ESG report was presented."
+      },
+      {
+        "year": 2024,
+        "img": "/images/history/01042024.png",
+        "date": "April",
+        "title": "Annual Meeting of Shareholders",
+        "body": "The 2024 Annual Meeting of Shareholders, with the slogan 'Investor in Green Development,' was successfully held online for the first time through the InvesCore application and website."
+      }
+    ],
+    "2023": [
+      {
+        "year": 2023,
+        "img": "/images/history/01012023.png",
+        "date": "January",
+        "title": "ESG",
+        "body": "Invescore Financial Group has implemented ESG systems into daily operations aligned with Mongolia’s principles of sustainable financing."
+      },
+      {
+        "year": 2023,
+        "img": "/images/history/01032023.png",
+        "date": "March",
+        "title": "Restructuring the organizational framework",
+        "body": "The organizational framework of branches underwent a restructuring, resulting in the expansion of four branches into dedicated Business Centers."
+      },
+      {
+        "year": 2023,
+        "img": "/images/history/02032023.png",
+        "date": "March",
+        "title": "Uzbekistan branch",
+        "body": "Founded a subsidiary in Uzbekistan and extended operational endeavors across Central Asia."
+      }
+    ],
+    "2022": [
+      {
+        "year": 2022,
+        "img": "/images/history/01062022.png",
+        "date": "June",
+        "title": "FPO",
+        "body": "Financial Regulatory Commission has approved of issuing additional shares (FPO) and the initial order in the primary market was completed with 100.41%. "
+      },
+      {
+        "year": 2022,
+        "img": "/images/history/01122022.png",
+        "date": "December",
+        "title": "InvesCore Bond 2.0",
+        "body": "Invescore Bond 2.0” – a bond worth 50 billion MNT was introduced to the securities market"
+      }
+    ],
+    "2021": [
+      {
+        "year": 2021,
+        "img": "/images/history/01052021.png",
+        "date": "May",
+        "title": "Asset-backed securities",
+        "body": "Asset-backed securities worth 20 billion MNT were traded on Mongolian Stock Exchange"
+      },
+      {
+        "year": 2021,
+        "img": "/images/history/01082021.png",
+        "date": "August",
+        "title": "Rio Tinto Mongolia 2021",
+        "body": "The program to support micro and SMEnterprises was implemented in cooperation with “Rio Tinto 2021 Mongolia” LLC"
+      }
+    ],
+    "2020": [
+      {
+        "year": 2020,
+        "img": "/images/history/01012020.png",
+        "date": "01-р сар",
+        "title": " Kyrgyz Republic branch",
+        "body": "Acquired NBFI 'Zolotoi standard' in Kyrgyz Republic."
+      },
+      {
+        "year": 2020,
+        "img": "/images/history/02012020.png",
+        "date": "January",
+        "title": "Pocket app launch",
+        "body": "Launched new product 'POCKET'"
+      },
+      {
+        "year": 2020,
+        "img": "/images/history/03012020.png",
+        "date": "January",
+        "title": "Core banking system",
+        "body": "Implemented the new core-banking system."
+      },
+      {
+        "year": 2020,
+        "img": "/images/history/01042020.png",
+        "date": "April",
+        "title": "Closed end bond",
+        "body": "Issued closed-end bond."
+      },
+      {
+        "year": 2020,
+        "img": "/images/history/01092020.png",
+        "date": "September",
+        "title": "Alliance",
+        "body": "Initiated Alliance program."
+      },
+      {
+        "year": 2020,
+        "img": "/images/history/01102020.png",
+        "date": "October",
+        "title": "Kiosk",
+        "body": "Implemented Kiosk service."
+      },
+      {
+        "year": 2020,
+        "img": "/images/history/01112020.png",
+        "date": "November",
+        "title": "E-money",
+        "body": "Acquired approval for e-money license."
+      }
+    ],
+    "2019": [
+      {
+        "year": 2019,
+        "img": "/images/history/01032019.png",
+        "date": "March",
+        "title": "Pocket",
+        "body": "Established 'Invescore Wallet' LLC, a fintech NBFI."
+      },
+      {
+        "year": 2019,
+        "img": "/images/history/01062019.png",
+        "date": "June",
+        "title": "IPO",
+        "body": "Listed on the Mongolian Stock Exchange"
+      },
+      {
+        "year": 2019,
+        "img": "/images/history/01072019.png",
+        "date": "July",
+        "title": "Erdenet branch",
+        "body": "Extended operation into Erdenet city."
+      }
+    ],
+    "2018": [
+      {
+        "year": 2018,
+        "img": "/images/history/01032018.png",
+        "date": "March",
+        "title": "AI Lab",
+        "body": "Established IT company 'Invescore AI Lab'"
+      },
+      {
+        "year": 2018,
+        "img": "/images/history/01102018.png",
+        "date": "October",
+        "title": "Hur",
+        "body": "Connected to the 'HUR' state database center, as a first NBFI."
+      },
+      {
+        "year": 2018,
+        "img": "/images/history/01102018.png",
+        "date": "November",
+        "title": "Smartlos",
+        "body": "'Smart LOS' системийг дотооддоо боловсруулан үйл ажиллагаандаа нэвтрүүлэв."
+      },
+      {
+        "year": 2018,
+        "img": "/images/history/01122018.png",
+        "date": "December",
+        "title": "Developed AI based scoring system.",
+        "body": "Developed AI based scoring system."
+      }
+    ],
+    "2017": [
+      {
+        "year": 2017,
+        "img": "/images/history/01012017.png",
+        "date": "January",
+        "title": "Launched New Products",
+        "body": "Launched new products: 'Car loan', Business line, Credit card, SME loan"
+      }
+    ],
+    "2016": [
+      {
+        "year": 2016,
+        "img": "/images/history/01012016.png",
+        "date": "January",
+        "title": "Started operation",
+        "body": "Started its operation in Ulaanbaatar with 6 licenses from FRC"
+      }
+    ]
+  }
+}

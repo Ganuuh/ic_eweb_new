@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { Footer, Header } from "@/components/common";
+import dynamic from "next/dynamic";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const ThemeProvider = dynamic(
+  () => import("@/components/providers/theme_provider")
+);
+
+const schriftedSans = localFont({
+  src: "/fonts/schrifted_regular.woff",
+  variable: "--font-schrifted-sans",
 });
 
 export const metadata: Metadata = {
@@ -25,10 +25,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className={`${schriftedSans.variable} , antialiased`}>
+        <ThemeProvider>
+          <Header />
+          {children}
+          {/* <Footer /> */}
+        </ThemeProvider>
       </body>
     </html>
   );
