@@ -3,6 +3,7 @@ import { ProductOutlined } from "@ant-design/icons";
 import {
   AccountBalanceWalletOutlined,
   BusinessOutlined,
+  BusinessTwoTone,
   CategoryOutlined,
   PeopleAltOutlined,
 } from "@mui/icons-material";
@@ -20,47 +21,13 @@ export const BurgerMenu = () => {
     searchParams.size !== 0 ? `${pathname}?${searchParams}` : pathname;
   const routerHandler = (link: string) => {
     router.push(link);
+    setDrawer(false);
   };
   const menuItem: MenuItem[] = [
     {
       key: "products",
       label: "Бүтээгдэхүүн",
       icon: <ProductOutlined />,
-
-      //   children: [
-      //     {
-      //       key: "/product?inview=apart",
-      //       label: "Орон сууц",
-      //       icon: <BusinessTwoTone />,
-      //       onClick: () => {
-      //         routerHandler("/product?inview=apart");
-      //       },
-      //     },
-      //     {
-      //       key: "/product?inview=office",
-      //       label: "Оффис",
-      //       icon: <CoffeeOutlined />,
-      //       onClick: () => {
-      //         routerHandler("/product?inview=office");
-      //       },
-      //     },
-      //     {
-      //       key: "/product?inview=car",
-      //       label: "Автомашин",
-      //       icon: <CarOutlined />,
-      //       onClick: () => {
-      //         routerHandler("/product?inview=car");
-      //       },
-      //     },
-      //     {
-      //       key: "/product?inview=tool",
-      //       label: "Тоног төхөөрөмж",
-      //       icon: <ToolOutlined />,
-      //       onClick: () => {
-      //         routerHandler("/product?inview=tool");
-      //       },
-      //     },
-      //   ],
     },
     {
       key: "/investors",
@@ -75,9 +42,43 @@ export const BurgerMenu = () => {
       key: "/company",
       icon: <BusinessOutlined fontSize="inherit" color="inherit" />,
       label: "Компани",
-      onClick: () => {
-        routerHandler("/company");
-      },
+      children: [
+        {
+          key: "/company/company-structure",
+          label: "Байгууллагын бүтэц",
+          icon: <BusinessTwoTone />,
+          onClick: () => {
+            routerHandler("/company/company-structure");
+          },
+        },
+        // {
+        //   key: "/product?inview=office",
+        //   label: "Оффис",
+        //   icon: <CoffeeOutlined />,
+        //   onClick: () => {
+        //     routerHandler("/product?inview=office");
+        //   },
+        // },
+        // {
+        //   key: "/product?inview=car",
+        //   label: "Автомашин",
+        //   icon: <CarOutlined />,
+        //   onClick: () => {
+        //     routerHandler("/product?inview=car");
+        //   },
+        // },
+        // {
+        //   key: "/product?inview=tool",
+        //   label: "Тоног төхөөрөмж",
+        //   icon: <ToolOutlined />,
+        //   onClick: () => {
+        //     routerHandler("/product?inview=tool");
+        //   },
+        // },
+      ],
+      // onClick: () => {
+      //   routerHandler("/company");
+      // },
     },
     {
       key: "/human-resource",
@@ -114,6 +115,7 @@ export const BurgerMenu = () => {
         }}
       >
         <Menu
+          mode="inline"
           items={menuItem}
           selectable
           selectedKeys={[fullPath]}

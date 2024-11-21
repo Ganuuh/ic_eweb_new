@@ -1,3 +1,4 @@
+import { Button } from "antd";
 import { RelativeImage } from "./relative_image";
 import { ResponsiveContainer } from "./responsive_container";
 type BannerContainerProps = {
@@ -6,42 +7,55 @@ type BannerContainerProps = {
   links: string[];
   title: string;
   description?: string;
+  textClassName?: string;
 };
 
 export const BannerContainer = (props: BannerContainerProps) => {
-  const { links, title, description, image, responsive_image } = props;
+  const { links, title, description, image, responsive_image, textClassName } =
+    props;
   return (
-    <div className="w-full h-[320px] relative">
-      <div className="w-full h-full relative hidden">
+    <div className="w-full h-[420px] relative">
+      <div className="w-full h-full relative hidden md:flex">
         <RelativeImage src={image} />
       </div>
       <div className="w-full h-full relative md:hidden">
         <RelativeImage src={responsive_image} />
       </div>
-      <div className="w-full h-full flex items-center justify-center absolute top-0 left-0">
+      <div className="w-full h-full flex items-center justify-center  absolute top-0 left-0">
         <ResponsiveContainer>
-          <div className="w-full flex flex-col items-center gap-[8px]">
-            <div className="w-fit flex gap-[8px]">
+          <div className="w-full  flex flex-col md:items-center justify-between gap-[15px] md:gap-[8px] items-start">
+            <div className="w-fit flex gap-[10px]">
               {links.map((each, index) => (
                 <div
                   key={each}
-                  className="text-white text-[12px] flex gap-[2px] items-center"
+                  className={`md:text-[16px] text-[12px] leading-[24px] flex gap-[2px] items-center ${textClassName}`}
                 >
-                  <p className="text-[12px]">{each}</p>
+                  <p className="text-[16px]">{each}</p>
                   {index < links.length - 1 ? (
                     <div className="w-[16px] h-[16px] relative">
-                      <RelativeImage src="/arrow_new.png" />
+                      <RelativeImage
+                        src={
+                          textClassName === "text-white"
+                            ? "/arrow_new.png"
+                            : "/black_arrow.png"
+                        }
+                      />
                     </div>
                   ) : null}
                 </div>
               ))}
             </div>
-            <div className="w-full flex flex-col gap-[16px] text-white items-center">
-              <p className="leading-[40px] text-[28px] font-bold">{title}</p>
-              <p className="leading-[20px] text-center text-[14px] w-[80%]">
+            <div className="w-full flex flex-col gap-[20px] text-white md:items-center">
+              <p className="leading-[52px] md:text-[36px] text-[28px] font-bold">
+                {title}
+              </p>
+              <p className="md:leading-[26px] leading-[24px] md:text-center md:text-[18px] text-[14px] w-[80%]">
                 {description}
               </p>
             </div>
+            <Button className="md:hidden border-none bg-[#051017] text-[14px] font-medium text-white rounded-full px-[15px] py-[10px] items-center">
+              Дэлгэрэнгүй →
+            </Button>
           </div>
         </ResponsiveContainer>
       </div>

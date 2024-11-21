@@ -1,0 +1,67 @@
+{
+    "product": {
+      "self": "Product",
+      "car_buy": "Car purchase loan",
+      "business_loan": "Business loan",
+      "business_loan_line": "Business loan line",
+      "car_with_no_plate": "Loan for selling unregistered cars",
+      "investment_loan": "Investment loan",
+      "credit_card": "Credit card",
+      "usage_loan": "Consumer loan",
+      "apart_loan": "Mortgage loan",
+      "oron_suuts": "Mortgage loan",
+      "leasing_loan": "Leasing loan",
+      "salary_loan": "Salary loan",
+      "future_loan": "Confident future loan",
+      "fast_loan": "Quick loan",
+      "car_fast_loan": "Quick loan secured by a car",
+      "apart_fast_loan": "Quick loan secured by a property",
+      "phone_loan": "Quick loan secured by a phone number",
+      "green_loan": "Green loan",
+      "business_green": "Business green loan",
+      "usage_green": "Consumer green loan",
+      "car_green": "Green car loan",
+      "trust": "Trust loan",
+      "basic": "Basic loan",
+      "uyn": "Flexible loan"
+    },
+    "investment": {
+      "self": "Investors",
+      "huwitsaa": "Stocks",
+      "ipo": "IPO",
+      "fpo": "FPO",
+      "invest_pro": "Investment products",
+      "bond": "Bond",
+      "hbvts": "Preferred stock",
+      "tailan": "Report",
+      "finance_tailan": "Financial report",
+      "uil_ajillagaa_tailan": "Operational report",
+      "stable_tailan": "Sustainable financing report",
+      "company_tailan": "Corporate governance report"
+    },
+    "company": {
+      "self": "Company",
+      "about_us": "About us",
+      "company_struc": "Organizational structure",
+      "udirdlaga_bag": "Leadership team",
+      "zasaglal": "Corporate governance",
+      "butets": "Structure",
+      "ohin_com": "Subsidiaries",
+      "risk": "Risk management",
+      "togtowortoi_hugjil": "Sustainable development",
+      "togtowortoi_hugjil_bodlogo": "Sustainable development policy",
+      "bon": "Environmental, Social and Governance (ESG)",
+      "projects": "Projects and programs",
+      "smb": "SMB program",
+      "alliance": "Alliance program",
+      "stable_support": "Sustainable development support"
+    },
+    "human_resource": {
+      "self": "Human Resources",
+      "welcome": "Welcome to Invescore",
+      "works": "Open positions",
+      "choice": "Opportunities and challenges",
+      "hangamj": "Discounts and benefits package"
+    }
+  }
+  

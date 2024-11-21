@@ -14,7 +14,7 @@ import { ResponsiveContainer } from "./responsive_container";
 export const Footer = () => {
   return (
     <div className="w-full h-fit relative flex justify-center pt-[28px] pb-[40px]">
-      <div className="absolute top-0 left-0 w-full h-[100px]">
+      <div className="absolute top-0 left-0 w-full md:h-[100px] h-[78px]">
         <div className="w-full h-full relative">
           <RelativeImage src="/images/common/footer_back.png" />
         </div>
@@ -40,7 +40,40 @@ export const Footer = () => {
                 </div>
               </div>
               <div className="w-full flex justify-between items-center">
-                <div className="w-fit flex items-center gap-[40px]">
+                <div className="w-fit md:flex items-center gap-[40px] hidden">
+                  <p className="text-[#243E4E] text-[16px] font-medium cursor-pointer">
+                    Бодлого, журам
+                  </p>
+                  <p className="text-[#243E4E] text-[16px] font-medium cursor-pointer">
+                    Түншлэл
+                  </p>
+                  <p className="text-[#243E4E] text-[16px] font-medium cursor-pointer">
+                    Санал хүсэлт
+                  </p>
+                </div>
+                <div className="w-fit flex flex-col md:flex-row md:items-center  items-start md:gap-[30px] gap-[20px]">
+                  <div className="w-fit  flex  items-center gap-[8px]">
+                    <QuestionCircleFilled style={{ color: "#243E4E" }} />
+                    <p className="text-[#243E4E] text-[16px] font-medium cursor-pointer">
+                      Тусламж
+                    </p>
+                  </div>
+                  <div className="w-fit  flex items-center gap-[8px]">
+                    <PhoneOutlined style={{ color: "#243E4E" }} />
+                    <p className="text-[#243E4E] text-[16px] font-medium cursor-pointer">
+                      77090077
+                    </p>
+                  </div>
+                  <div className="w-fit  flex items-center gap-[8px]">
+                    <PushpinFilled style={{ color: "#243E4E" }} />
+                    <p className="text-[#243E4E] text-[16px] font-medium cursor-pointer">
+                      Хаяг, байршил
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="w-full flex md:hidden flex-col gap-[28px] items-center">
+                <div className="w-full flex justify-between">
                   <p className="text-[#243E4E] text-[14px] font-medium cursor-pointer">
                     Бодлого, журам
                   </p>
@@ -51,29 +84,18 @@ export const Footer = () => {
                     Санал хүсэлт
                   </p>
                 </div>
-                <div className="w-fit flex items-center  gap-[30px]">
-                  <div className="w-fit  flex items-center gap-[8px]">
-                    <QuestionCircleFilled style={{ color: "#243E4E" }} />
-                    <p className="text-[#243E4E] text-[14px] font-medium cursor-pointer">
-                      Тусламж
-                    </p>
-                  </div>
-                  <div className="w-fit  flex items-center gap-[8px]">
-                    <PhoneOutlined style={{ color: "#243E4E" }} />
-                    <p className="text-[#243E4E] text-[14px] font-medium cursor-pointer">
-                      77090077
-                    </p>
-                  </div>
-                  <div className="w-fit  flex items-center gap-[8px]">
-                    <PushpinFilled style={{ color: "#243E4E" }} />
-                    <p className="text-[#243E4E] text-[14px] font-medium cursor-pointer">
-                      Хаяг, байршил
-                    </p>
-                  </div>
+                <div className="w-fit flex gap-[24px]">
+                  <p className="text-[#0C293A] text-[14px] leading-[16px] cursor-pointer">
+                    Үйлчилгээний нөхцөл
+                  </p>
+                  <div className="h-[100%] border-l-[1px]" />
+                  <p className="text-[#0C293A] text-[14px] leading-[16px] cursor-pointer">
+                    Нуудлалын бодлого
+                  </p>
                 </div>
               </div>
-              <div className="w-full flex justify-between items-center">
-                <p className="text-[12px] leading-[18px] text-[#0C293A] font-semibold">
+              <div className="w-full md:flex justify-between items-center hidden">
+                <p className="text-[14px] leading-[18px] text-[#0C293A] font-semibold">
                   Инвескор банк аппликейшн татах
                 </p>
                 <div className="grid grid-cols-2 gap-[20px] p-[10px] rounded-[10px] bg-[#F5F7F8]">
@@ -103,16 +125,16 @@ export const Footer = () => {
               </div>
             </div>
             <div className="w-full flex justify-between">
-              <div className="w-fit flex items-center gap-[15px]">
-                <p className="text-[#0C293A] text-[13px] leading-[16px] cursor-pointer">
+              <div className="w-fit md:flex items-center gap-[15px] hidden">
+                <p className="text-[#0C293A] text-[15px] leading-[16px] cursor-pointer">
                   Үйлчилгээний нөхцөл
                 </p>
                 <div className="h-[100%] border-l-[1px]" />
-                <p className="text-[#0C293A] text-[13px] leading-[16px] cursor-pointer">
+                <p className="text-[#0C293A] text-[15px] leading-[16px] cursor-pointer">
                   Нуудлалын бодлого
                 </p>
               </div>
-              <p className="text-[#0C293A] text-[13px] leading-[16px] font-medium">
+              <p className="text-[#0C293A] text-[13px] leading-[16px] font-medium text-center">
                 © Бүх эрх хуулиар хамгаалагдсан 2024. Invescore Financial Group.
               </p>
             </div>

@@ -8,6 +8,8 @@ export const CardWithBackground = ({
   innerText,
   pt = 32,
   pl = 24,
+  res_pt = 22,
+  res_pl = 16,
 }: {
   image: string;
   justify: string;
@@ -15,6 +17,8 @@ export const CardWithBackground = ({
   innerText: React.ReactNode;
   pt?: number;
   pl?: number;
+  res_pt?: number;
+  res_pl?: number;
 }) => {
   return (
     <div
@@ -32,7 +36,7 @@ export const CardWithBackground = ({
           paddingTop: pt,
           paddingBottom: pt,
         }}
-        className={`h-full w-full absolute z-10 top left-0 flex px-[${pl}px] py-[${pt}px]  ${justify} ${items} `}
+        className={`h-full w-full absolute z-10 top left-0 flex  md:px-[${pl}px] px-[${res_pl}px] md:py-[${pt}px] py-[${res_pt}px]  ${justify} ${items} `}
       >
         {innerText}
       </div>

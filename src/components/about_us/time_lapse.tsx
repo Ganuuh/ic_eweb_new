@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ResponsiveContainer } from "../common";
 import { SwiperSlide, Swiper } from "swiper/react";
 import { Autoplay } from "swiper/modules";
@@ -19,6 +19,7 @@ export const TimeLapseComponent = ({
 }) => {
   const [achievement, setAchievement] = useState<null | any>(null);
   const [activeYear, setActiveYear] = useState<number>(2024);
+  const swiperRef = useRef<any | null>(null);
   const achievementYear: any = [
     {
       year: 2024,
@@ -46,6 +47,20 @@ export const TimeLapseComponent = ({
     },
   ];
 
+  const handlePrev = () => {
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slidePrev();
+    }
+  };
+
+  const handleNext = () => {
+    console.log("working");
+    if (swiperRef.current && swiperRef.current.swiper) {
+      console.log("working inside");
+      swiperRef.current.swiper.slideNext();
+    }
+  };
+
   useEffect(() => {
     const fetchSuccess = async () => {
       let response = await fetch(json_address);
@@ -55,7 +70,7 @@ export const TimeLapseComponent = ({
     fetchSuccess();
   }, []);
   return achievement ? (
-    <div className="w-full flex flex-col gap-[28px] items-center">
+    <div className="w-[100vw] md:w-full flex flex-col gap-[12px] md:gap-[28px] items-center">
       <ResponsiveContainer>
         <div className="w-full h-fit flex flex-col gap-[24px] items-center">
           <p className="text-[#0C293A] text-[24px] font-semibold">{title}</p>
@@ -82,45 +97,52 @@ export const TimeLapseComponent = ({
           </div>
         </div>
       </ResponsiveContainer>
-      <div className="flex gap-4 items-center">
+      <div className="w-full md:w-[1440px] flex gap-4 items-center justify-center px-[20px]">
         <ArrowLeftOutlined
-          style={{ fontSize: 20, color: "#939393", cursor: "pointer" }}
+          onClick={handlePrev}
+          // className="border"
+          style={{
+            fontSize: 20,
+            color: "#939393",
+            cursor: "pointer",
+          }}
         />
-        <ResponsiveContainer>
-          <div className="w-full h-fit flex  gap-[40px] ">
-            <Swiper
-              slidesPerView={2}
-              spaceBetween={40}
-              speed={700}
-              loop
-              autoplay
-              modules={[Autoplay]}
-              breakpoints={{
-                640: {
-                  slidesPerView: 1,
-                },
-                768: {
-                  slidesPerView: 2,
-                },
-                1024: {
-                  slidesPerView: 3,
-                },
-              }}
-            >
-              {achievement.MN[activeYear.toString()].map(
-                (each: any, index: number) => {
-                  const { ...rest } = each;
-                  return (
-                    <SwiperSlide key={index} style={{ width: "100%" }}>
-                      <AboutUsCard {...rest} />
-                    </SwiperSlide>
-                  );
-                }
-              )}
-            </Swiper>
-          </div>
-        </ResponsiveContainer>
+
+        <Swiper
+          ref={swiperRef}
+          slidesPerView={1}
+          spaceBetween={40}
+          speed={1000}
+          loop
+          autoplay={{ delay: 2000 }}
+          modules={[Autoplay]}
+          style={{ width: "100%" }}
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          }}
+        >
+          {achievement.MN[activeYear.toString()].map(
+            (each: any, index: number) => {
+              const { ...rest } = each;
+              return (
+                <SwiperSlide key={index} style={{ width: "100%" }}>
+                  <AboutUsCard {...rest} />
+                </SwiperSlide>
+              );
+            }
+          )}
+        </Swiper>
+
         <ArrowRightOutlined
+          onClick={handleNext}
           style={{ fontSize: 20, color: "#939393", cursor: "pointer" }}
         />
       </div>
