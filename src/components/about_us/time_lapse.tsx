@@ -97,7 +97,7 @@ export const TimeLapseComponent = ({
           </div>
         </div>
       </ResponsiveContainer>
-      <div className="w-full md:w-[1440px] flex gap-4 items-center justify-center px-[20px]">
+      <div className="w-full xl:w-[1440px] flex gap-4 items-center justify-center px-[20px]">
         <ArrowLeftOutlined
           onClick={handlePrev}
           // className="border"

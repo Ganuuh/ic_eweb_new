@@ -6,11 +6,12 @@ import { BurgerMenu } from "./burger_menu";
 import { useEffect, useState } from "react";
 import LocaleSwitcher from "./language_toggle";
 import { useLang } from "../providers/language_provider";
+import Link from "next/link";
 
 export const Header = () => {
   const [logo, setLogo] = useState<number>(0);
   const [clicked, setClicked] = useState<null | number>(null);
-  const { header } = useLang();
+  const { header, locale } = useLang();
 
   const { product, investment, company, human_resource } = header;
 
@@ -85,11 +86,34 @@ export const Header = () => {
     choice,
     hangamj,
   } = human_resource;
+
+  const groupItems = (items: any[]) => {
+    const groups = [];
+    let currentGroup: any[] = [];
+
+    items.forEach((item) => {
+      if (item.bold) {
+        if (currentGroup.length > 0) {
+          groups.push([...currentGroup]);
+        }
+        currentGroup = [item];
+      } else {
+        currentGroup.push(item);
+      }
+    });
+
+    // Add the last group
+    if (currentGroup.length > 0) {
+      groups.push(currentGroup);
+    }
+
+    return groups;
+  };
   const routes = [
     {
       text: productSelf,
       children: [
-        { route: "", text: car_buy, bold: true },
+        { route: `/${locale}/`, text: car_buy, bold: true },
         { route: "", text: business_loan, bold: true },
         { route: "", text: business_loan_line },
         { route: "", text: car_with_no_plate },
@@ -209,15 +233,43 @@ export const Header = () => {
         </div>
       </ResponsiveContainer>
       <div
-        style={{ height: clicked == null ? 0 : 300 }}
+        style={{
+          height: clicked == null ? 0 : "fit-content",
+          paddingTop: clicked == null ? 0 : 28,
+          paddingBottom: clicked == null ? 0 : 28,
+        }}
         onMouseLeave={() => {
           setClicked(null);
         }}
-        className="hidden md:flex flex-wrap gap-[20px] w-[100vw]  bg-red-400 absolute top-[98%] left-0 duration-300 z-20"
+        className="hidden md:flex justify-center items-center w-[100vw]  bg-white absolute top-[100%] left-0 duration-300 z-20"
       >
-        {clicked !== null
-          ? routes[clicked].children.map((each) => <p>{each.text}</p>)
-          : null}
+        <div className="xl:w-[1360px] w-full px-[25px] xl:px-0 h-full">
+          {clicked !== null && (
+            <div className="grid grid-cols-4 gap-8  items-start w-full ">
+              {groupItems(routes[clicked].children).map((group, groupIndex) => (
+                <div
+                  key={groupIndex}
+                  className="flex flex-col  gap-[5px] justify-center items-start "
+                >
+                  {group.map((item, itemIndex) => (
+                    <Link key={itemIndex} href={item.route}>
+                      <p
+                        style={
+                          item.bold ? { fontWeight: 600 } : { fontWeight: 400 }
+                        }
+                        className={`text-[14px] leading-[16px] text-[#0C293A] rounded-full py-[8px] px-[14px] ${
+                          item.bold ? null : "hover:bg-[#EDF1F2]"
+                        } duration-300`}
+                      >
+                        {item.text}
+                      </p>
+                    </Link>
+                  ))}
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

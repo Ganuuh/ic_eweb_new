@@ -1,8 +1,20 @@
 const nextConfig = {
-  // i18n: {
-  //   locales: ["en", "mn"], // Supported locales
-  //   defaultLocale: "mn", // Default locale
-  // },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "gateway.invescore.mn",
+        port: "",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "via.placeholder.com",
+        port: "",
+        pathname: "/**",
+      },
+    ],
+  },
 };
 
 export default nextConfig;

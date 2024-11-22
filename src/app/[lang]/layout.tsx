@@ -12,9 +12,34 @@ const LanguageProvider = dynamic(
   () => import("@/components/providers/language_provider")
 );
 
+// Define all your font variations
 const schriftedSans = localFont({
-  src: "/fonts/schrifted_regular.woff",
+  src: [
+    {
+      path: "../../fonts/schrifted_regular.woff",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../fonts/schrifted_medium.woff",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../../fonts/schrifted_bold.woff",
+      weight: "700",
+      style: "normal",
+    },
+  ],
   variable: "--font-schrifted-sans",
+  display: "swap",
+});
+
+// For Gesit Mono if you want to use it
+const geistMono = localFont({
+  src: "../../fonts/GeistMonoVF.woff",
+  variable: "--font-geist-mono",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -35,7 +60,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang={params.lang}>
-      <body className={`${schriftedSans.variable} , antialiased`}>
+      <body
+        className={`${schriftedSans.variable} ${geistMono.variable} font-sans antialiased`}
+      >
         <LanguageProvider
           lang={{
             lang: params.lang,
