@@ -22,9 +22,9 @@ export const RollingCarousel = ({
         slidesPerView={responsiveSlidePerView}
         spaceBetween={26}
         speed={3000}
-        direction={"horizontal"}
         loop
         modules={[Autoplay]}
+        className="swiperClass"
         autoplay={{
           delay: 0,
           disableOnInteraction: false,

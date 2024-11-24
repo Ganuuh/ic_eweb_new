@@ -29,7 +29,9 @@ export default function LanguageProvider({
   lang: Language;
 }) {
   const [loading, setLoading] = useState<boolean>(true);
-  const [locale, setLocale] = useState<"en" | "mn">(lang.lang);
+  const [locale, setLocale] = useState<"en" | "mn">(
+    lang.lang ? lang.lang : "mn"
+  );
   const [header, setHeader] = useState<any>({});
 
   useEffect(() => {

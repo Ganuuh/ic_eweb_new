@@ -237,6 +237,7 @@ export const Header = () => {
           height: clicked == null ? 0 : "fit-content",
           paddingTop: clicked == null ? 0 : 28,
           paddingBottom: clicked == null ? 0 : 28,
+          borderBottom: "1px solid #EDF1F2",
         }}
         onMouseLeave={() => {
           setClicked(null);

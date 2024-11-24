@@ -13,13 +13,13 @@ import { ResponsiveContainer } from "./responsive_container";
 
 export const Footer = () => {
   return (
-    <div className="w-full h-fit relative flex justify-center pt-[28px] pb-[40px]">
+    <div className="w-full h-fit relative flex justify-center items-center pt-[28px] pb-[40px]">
       <div className="absolute top-0 left-0 w-full md:h-[100px] h-[78px]">
         <div className="w-full h-full relative">
           <RelativeImage src="/images/common/footer_back.png" />
         </div>
       </div>
-      <div className="z-10">
+      <div className="z-10 w-fit md:w-full xl:w-fit">
         <ResponsiveContainer>
           <div className="w-full flex flex-col gap-[20px]">
             <div className="w-full flex flex-col gap-[30px] pb-[20px] border-b">

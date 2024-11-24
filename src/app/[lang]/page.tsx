@@ -9,9 +9,9 @@ import { Locale } from "@/lib/i18n-config";
 
 export default async function Home({ params }: { params: { lang: Locale } }) {
   return (
-    <div className="w-full flex flex-col items-center gap-[60px]">
-      {/* <HomeBanner />
-      <Currency /> */}
+    <div className="w-full flex flex-col items-center gap-[60px] bg-white">
+      <HomeBanner />
+      <Currency />
       <HomeNews />
       <ResponsiveContainer>
         <div className="w-full flex flex-col gap-[1.46vw] items-center pt-[140px] pb-[120px]">

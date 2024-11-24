@@ -1,5 +1,8 @@
 import { ConfigProvider } from "antd";
 import React from "react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
   return (
     <ConfigProvider

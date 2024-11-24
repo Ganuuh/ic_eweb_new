@@ -16,7 +16,7 @@ export const AboutUsCard = ({
   console.log(img);
   return (
     <div className="w-full flex flex-col bg-[#F8F8F8] p-[12px] gap-[12px] rounded-[12px]">
-      <div className="w-full h-[95px] md:h-[160px] rounded-[12px] overflow-hidden relative">
+      <div className="w-full md:h-[10.42vw] h-[30vw] rounded-[12px] overflow-hidden relative">
         <RelativeImage src={img} />
       </div>
       <div className="w-full flex flex-col gap-[8px]">

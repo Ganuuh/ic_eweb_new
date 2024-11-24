@@ -7,8 +7,11 @@ import {
 } from "@ant-design/icons";
 import { RelativeImage, ResponsiveContainer } from "../common";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import { useRef } from "react";
 
 export const Currency = () => {
+  const swiperRef = useRef<any | null>();
   const currency = [
     {
       currency: "USD",
@@ -30,11 +33,28 @@ export const Currency = () => {
       rate: 38.03,
       change: "up",
     },
+    {
+      currency: "CNY",
+      rate: 481.5,
+      change: "up",
+    },
+    {
+      currency: "GBP",
+      rate: 4526.0,
+      change: "down",
+    },
   ];
+
+  const handleNext = () => {
+    if (swiperRef.current && swiperRef.current.swiper) {
+      console.log("working inside");
+      swiperRef.current.swiper.slideNext();
+    }
+  };
 
   return (
     <ResponsiveContainer>
-      <div className="w-full h-[52px] flex gap-[80px]">
+      <div className="w-full h-fit flex items-center  justify-between">
         <div className="w-fit flex flex-col gap-[8px]">
           <p className="text-[#0C293A] text-[1.04vw] whitespace-nowrap font-semibold">
             Валютын ханш
@@ -43,14 +63,20 @@ export const Currency = () => {
             Бэлэн бус / Зарах
           </p>
         </div>
-        <div className="w-full h-full flex items-center gap-[40px] bg-red-400">
-          <div className="w-full bg-slate-600 h-full">
+        <div className="h-full w-[80%] flex justify-between items-center">
+          <div className="w-[90%] items-center flex justify-start  h-full">
             <Swiper
+              ref={swiperRef}
               slidesPerView={2}
               speed={1000}
-              spaceBetween={20}
-              style={{ width: "100%", backgroundColor: "red" }}
+              spaceBetween={40}
+              style={{ width: "100%" }}
               direction="horizontal"
+              modules={[Autoplay]}
+              autoplay={{
+                delay: 4000,
+                disableOnInteraction: false,
+              }}
               loop
               breakpoints={{
                 640: {
@@ -66,15 +92,15 @@ export const Currency = () => {
             >
               {currency.map((each, index) => (
                 <SwiperSlide key={index} style={{ width: "100%" }}>
-                  <div className="w-fit h-full rounded-full  py-[12px] px-[20px] flex gap-[10px] bg-[#F5F7F8] items-center">
-                    <div className="h-full aspect-square relative">
+                  <div className="w-fit h-full rounded-full  py-[0.63vw] px-[1.25vw] flex gap-[10px] bg-[#F5F7F8] items-center">
+                    <div className="h-[16px] aspect-square relative">
                       <RelativeImage src={""} />
                     </div>
 
                     <p className="text-[#0C293A] md:text-[0.94vw] text-[10px]">
                       {each.currency}
                     </p>
-                    <div className="border broder-[#0C293A]"></div>
+                    <div className="h-1 w-1  bg-[#0C293A] rounded-full"></div>
                     <p className="text-[#0C293A] md:text-[0.94vw] text-[10px] font-medium leading-[24px]">
                       {each.rate}
                     </p>
@@ -88,8 +114,11 @@ export const Currency = () => {
               ))}
             </Swiper>
           </div>
-          <div className="h-[80%] border rounded-full"></div>
-          <div className="h-[30px] flex justify-center items-center cursor-pointer aspect-square rounded-full bg-[#F5F7F8]">
+          <div className="h-[30px] border rounded-full"></div>
+          <div
+            onClick={handleNext}
+            className="h-[30px] flex justify-center items-center cursor-pointer aspect-square rounded-full bg-[#F5F7F8]"
+          >
             <ArrowRightOutlined />
           </div>
         </div>
