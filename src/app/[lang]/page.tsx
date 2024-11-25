@@ -4,6 +4,7 @@ import {
   HomeBanner,
   HomeNews,
   ImaginationHome,
+  LoanService,
 } from "@/components/home";
 import { Locale } from "@/lib/i18n-config";
 
@@ -26,6 +27,7 @@ export default async function Home({ params }: { params: { lang: Locale } }) {
         </div>
       </ResponsiveContainer>
       <ImaginationHome />
+      <LoanService />
     </div>
   );
 }
