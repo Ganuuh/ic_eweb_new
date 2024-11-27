@@ -53,3 +53,36 @@ body {
 .menu-container > div > div {
   animation: fadeIn 0.2s ease-out;
 }
+
+/* styles.css */
+.responsive-margin {
+  width: 100%;
+  height: fit-content;
+}
+
+@media (min-width: 768px) {
+  .responsive-margin.left {
+    margin-left: max(0px, calc((100% - 1000px)));
+  }
+  .responsive-margin.right {
+    margin-right: max(0px, calc((100% - 1000px)));
+  }
+}
+
+@media (min-width: 1280px) {
+  .responsive-margin.left {
+    margin-left: max(0px, calc((100% - 1040px)));
+  }
+  .responsive-margin.right {
+    margin-right: max(0px, calc((100% - 1040px)));
+  }
+}
+
+@media (min-width: 1536px) {
+  .responsive-margin.left {
+    margin-left: max(0px, calc((100% - 1360px)));
+  }
+  .responsive-margin.right {
+    margin-right: max(0px, calc((100% - 1360px)));
+  }
+}

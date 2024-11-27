@@ -4,15 +4,16 @@ export const InnerTrust = () => {
   return (
     <div className="w-full h-full flex flex-col gap-[1.67vw]">
       <div className="w-full flex h-fit flex-col items-start gap-[1.04vw]">
-        <p className="text-[#0C293A] text-[1.67vw] font-bold">Зээл</p>
+        <p className="text-[#0C293A] text-[14px] md:text-[1.67vw] font-bold">
+          Итгэлцэл
+        </p>
         <div className="w-full gap-[10px] flex">
-          <p className="rounded-[0.83vw] bg-white font-medium py-[0.68vw] px-[1.34vw] flex gap-[5px] text-[0.83vw] text-[#0C293A] items-center">
-            <Person />
+          <p className="rounded-[0.83vw] bg-white  text-[8px] font-medium py-[0.68vw] px-[1.34vw] text-[#0C293A] flex gap-[5px] items-center">
+            <Person fontSize="inherit" color="inherit" />
             Хувь хүн
           </p>
-
-          <p className="rounded-[0.83vw] bg-white font-medium py-[0.68vw] px-[1.34vw] flex text-[0.83vw] gap-[5px] text-[#0C293A] items-center">
-            <ApartmentOutlined className="text-[0.83vw] h-[0.83vw] w-[0.83vw]" />
+          <p className="rounded-[0.83vw] bg-white  text-[8px] font-medium py-[0.68vw] px-[1.34vw] text-[#0C293A] flex gap-[5px] items-center">
+            <ApartmentOutlined fontSize="inherit" color="inherit" />
             Байгууллага
           </p>
         </div>

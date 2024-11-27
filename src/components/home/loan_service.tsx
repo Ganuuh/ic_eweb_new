@@ -20,25 +20,25 @@ export const LoanService = () => {
 
   return (
     <ResponsiveContainer>
-      <div className="w-full flex justify-between items-center h-fit">
-        <div className="w-fit h-fit flex flex-col gap-[1.15vw] items-start max-w-[29vw]">
-          <div className="text-[#0C293A] text-[2.08vw] flex flex-col font-semibold leading-[2.92vw]">
+      <div className="w-full flex flex-col md:flex-row justify-between items-center h-fit pt-[8.33vw] gap-[40px] md:gap-0">
+        <div className="md:w-fit w-full h-fit flex flex-col gap-[14px] md:gap-[1.15vw] items-start md:max-w-[29vw]">
+          <div className="text-[#0C293A] md:text-[2.08vw] flex flex-col font-semibold md:leading-[2.92vw] leading-[24px] text-[20px]">
             <p>Инвескор</p>
             <p>Зээлийн үйлчилгээ авах</p>
           </div>
-          <p className="text-[1.04vw] text-[#0C293A] leading-[1.67vw]">
+          <p className=" text-[14px] leading-[24px] md:text-[1.04vw] text-[#0C293A]  md:leading-[1.67vw]">
             Богино хугацаанд боломжит хамгийн өндөр дүнгээр, уян хатан
             нөхцөлтэйгээр олон төрлийн зээлийн бүтээгдэхүүнээс сонгоорой.
           </p>
-          <Button className="group text-white flex items-center text-[1.1vw] rounded-full bg-[#0C293A] px-[1.67vw] py-[0.52vw]">
+          <Button className="group text-white flex items-center md:text-[1.1vw] rounded-full bg-[#0C293A] px-[20px] py-[8px] md:px-[1.67vw] md:py-[0.52vw] text-[12px] leading-[14px]">
             Дэлгэрэнгүй
           </Button>
         </div>
 
-        <div className="w-[45%] h-full  overflow-hidden">
-          <div className="w-[200%] h-full">
+        <div className="md:w-[45%] w-full h-full overflow-hidden md:overflow-visible">
+          <div className="md:w-[200%] w-[130%] xl:w-[220%] h-full">
             <Swiper
-              slidesPerView={1}
+              slidesPerView={2}
               spaceBetween={20}
               direction="horizontal"
               speed={1000}
@@ -62,7 +62,7 @@ export const LoanService = () => {
               {data.map((each, index) => (
                 <SwiperSlide key={index}>
                   <div
-                    className="h-[33.33vw] 2xl:w-[21.5vw] w-[22.5vw] bg-[#F5F5F5CC] px-[1.25vw] py-[1.77vw] rounded-[1.09vw] transition-transform duration-300"
+                    className="md:h-[33.33vw] h-[320px] w-[220px] 2xl:w-[21.5vw] md:w-[22.5vw] rounded-[12px] bg-[#F5F5F5CC] md:px-[1.25vw] md:py-[1.77vw] px-[12px] py-[18px] md:rounded-[1.09vw] transition-transform duration-300"
                     style={{
                       transform: `scale(${index === realIndex ? 1 : 0.9})`,
                     }}

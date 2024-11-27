@@ -6,3 +6,5 @@ export * from "./loan_service";
 export * from "./inner_loan";
 export * from "./inner_loan_card";
 export * from "./inner_trust";
+export * from "./ohin_company";
+export * from "./bottom_cards";

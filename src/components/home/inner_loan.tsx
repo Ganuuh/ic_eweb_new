@@ -28,11 +28,13 @@ export const InnerLoan = () => {
     },
   ];
   return (
-    <div className="w-full h-full flex flex-col gap-[1.67vw]">
-      <div className="w-full flex h-fit flex-col items-start gap-[1.04vw]">
-        <p className="text-[#0C293A] text-[1.67vw] font-bold">Зээл</p>
+    <div className="w-full h-full flex flex-col gap-[16px] md:gap-[1.67vw]">
+      <div className="w-full flex h-fit flex-col items-start gap-[10px] md:gap-[1.04vw]">
+        <p className="text-[#0C293A] text-[14px] md:text-[1.67vw] font-bold">
+          Зээл
+        </p>
         <div className="w-full gap-[10px] flex">
-          <p className="rounded-[0.83vw] bg-white font-medium py-[0.68vw] px-[1.34vw] text-[#0C293A]">
+          <p className="rounded-[0.83vw] bg-white  text-[8px] md:text-[1vw] font-medium py-[0.68vw] px-[1.34vw] text-[#0C293A]">
             Бүтээгдэхүүн
           </p>
           <div className="w-full grid grid-cols-3 gap-[1.25vw]  items-center">
@@ -42,7 +44,7 @@ export const InnerLoan = () => {
           </div>
         </div>
       </div>
-      <div className="w-full grid grid-cols-2 gap-[0.73vw]">
+      <div className="w-full h-full grid grid-cols-2 gap-[8px] md:gap-[0.73vw]">
         {loans.map((each, index) => (
           <InnerLoanCard key={index} {...each} />
         ))}

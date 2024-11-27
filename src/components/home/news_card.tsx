@@ -13,15 +13,17 @@ export const NewsCard = ({
   description: string;
 }) => {
   return (
-    <div className="w-full flex bg-[#F8F8F8] p-[0.83vw] rounded-[0.83vw] flex-col gap-[16px]">
-      <div className="w-full h-[11.15vw] rounded-[16px] relative overflow-hidden">
+    <div className="md:w-full w-[260px] flex bg-[#F8F8F8] p-[10px] md:p-[0.83vw] rounded-[12px] md:rounded-[0.83vw] flex-col gap-[16px]">
+      <div className="w-full md:h-[11.15vw] h-[128px] rounded-[16px] relative overflow-hidden">
         <RelativeImage src={image} />
       </div>
       <div className="w-full flex flex-col gap-[10px]">
-        <p className="text-[0.94vw] text-[#86949D]">
+        <p className="md:text-[0.94vw] text-[#86949D] text-[12px]">
           {format(date, "yyyy-MM-dd hh:mm:ss")}
         </p>
-        <p className="text-[0.94vw] text-[#243E4E] font-medium">{title}</p>
+        <p className="md:text-[0.94vw] text-[#243E4E] font-medium text-[14px]">
+          {title}
+        </p>
       </div>
     </div>
   );

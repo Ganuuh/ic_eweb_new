@@ -6,3 +6,4 @@ export * from "./card_with_background";
 export * from "./footer";
 export * from "./burger_menu";
 export * from "./language_toggle";
+export * from "./one_side_container";

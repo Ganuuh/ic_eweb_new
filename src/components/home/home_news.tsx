@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import { ResponsiveContainer } from "../common";
 import { NewsCard } from "./news_card";
 
@@ -27,19 +28,21 @@ export const HomeNews = () => {
   ];
   return (
     <ResponsiveContainer>
-      <div className="w-full flex flex-col gap-[1.66vw]">
+      <div className="w-full flex flex-col md:gap-[1.66vw] gap-[32px]">
         <div className="w-full flex justify-between">
-          <p className="text-[#0C293A] text-[1.46vw] font-semibold">
+          <p className="text-[#0C293A] text-[18px] md:text-[1.46vw] font-semibold">
             Мэдээ, мэдээлэл
           </p>
-          <p className="text-[1.04vw] text-[#0C293A] font-medium">
-            Бүх мэдээллийг үзэх
+          <p className="md:text-[1.04vw] text-[#0C293A] font-medium text-[12px]">
+            Бүгдийг үзэх
           </p>
         </div>
-        <div className="w-full grid grid-cols-3 gap-[2.5vw]">
-          {news.map((each, index) => (
-            <NewsCard key={index} {...each} />
-          ))}
+        <div className="w-full overflow-auto  gap-[2.5vw]">
+          <div className="w-fit  gap-[20px] md:w-full flex md:grid md:grid-cols-3">
+            {news.map((each, index) => (
+              <NewsCard key={index} {...each} />
+            ))}
+          </div>
         </div>
       </div>
     </ResponsiveContainer>
